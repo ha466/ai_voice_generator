@@ -1,6 +1,5 @@
-#  AI VOICE GENERATOR - README 🤖✨🌟
-
-   ## QUICK START 
+# QUICK START 
+   
 ## 1. Clone this magical repository
  ```bash
    git clone https://github.com/ha466/ai_voice_generator.git
