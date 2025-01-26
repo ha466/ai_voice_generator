@@ -70,7 +70,7 @@ Pray your GPU doesn't catch fire 🔥
 
 
 
-# 🧙♂️ Behind the Magic Curtain  
+# 🧙♂ Behind the Magic Curtain  
 
 ## 🔧 Tech Stack  
 - **Flask**: The shy waiter serving requests 🍸  
@@ -91,8 +91,7 @@ Pray your GPU doesn't catch fire 🔥
 
 
 
-## A batch of **TTS prompts with effects** to make your audio hilariously chaotic — perfect for testing dramatic pauses, emotional outbursts, and unexpected musical numbers! 🎭🎤  
-
+## A batch of  TTS prompts to test your  generator (guaranteed to make you snort-laugh 🤣)  ⚠️ if's all work well 😊
 ---
 
 ### **1. Robot Love Ballad**  
