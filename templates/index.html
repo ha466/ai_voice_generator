@@ -1,0 +1,78 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Voice Generator</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="app-container">
+        <div class="animated-bg"></div>
+        <header>
+            <h1><i class="fas fa-microphone-alt"></i> AI Voice Generator</h1>
+            <button class="menu-btn" id="menuBtn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </header>
+        <main>
+            <div class="card">
+                <div class="input-section">
+                    <div class="text-input-container">
+                        <textarea id="textInput" placeholder="Type or paste your text here..."></textarea>
+                        <div class="char-count">0 characters</div>
+                    </div>
+                    <div class="voice-selection">
+                        <label for="voiceSelect">Voice:</label>
+                        <select id="voiceSelect"></select>
+                    </div>
+                    <button id="generateBtn" class="generate-btn">
+                        <i class="fas fa-wand-magic-sparkles"></i> Generate Audio
+                    </button>
+                </div>
+                <div class="feedback-container">
+                    <div id="loading" class="feedback loading" style="display: none;">
+                        <i class="fas fa-spinner fa-spin"></i>
+                        <span>Generating your audio...</span>
+                    </div>
+                    <div id="error" class="feedback error" style="display: none;"></div>
+                    <div id="success" class="feedback success" style="display: none;">
+                        <i class="fas fa-check-circle"></i>
+                        <span>Audio generated successfully!</span>
+                    </div>
+                </div>
+                <div class="audio-player" id="audioPlayerContainer" style="display: none;">
+                    <div class="audio-controls">
+                        <audio id="audioPlayer" controls></audio>
+                        <button id="downloadBtn" class="download-btn">
+                            <i class="fas fa-download"></i> Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="side-menu" id="sideMenu">
+            <div class="menu-header">
+                <h2><i class="fas fa-sliders"></i> Settings</h2>
+                <button class="close-menu" id="closeMenu">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="menu-section">
+                <div class="history-header">
+                    <h3><i class="fas fa-history"></i> History</h3>
+                    <button class="clear-history-btn" onclick="audioHistoryManager.clearHistory()">
+                        <i class="fas fa-trash-alt"></i> Clear All
+                    </button>
+                </div>
+                <div class="history-list" id="historyList"></div>
+            </div>
+        </div>
+    </div>
+    <div class="menu-overlay" id="menuOverlay"></div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
