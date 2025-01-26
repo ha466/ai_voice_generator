@@ -151,3 +151,10 @@ Pray your GPU doesn't catch fire 🔥
 - Throw in `[evil laugh]` when the AI threatens world domination — just to keep things spicy. 🌶️  
 
 ## Go make robots **sing, sigh, and scream**! 🤖🔥 (Then pray they don’t unionize.)
+
+
+
+
+### for any q about tts  : https://github.com/suno-ai 
+### A small q you bro's  are you going  change the output limited to ~13-14 seconds
+# ---------------------------bye form 🐱‍👤-------------------------------------
